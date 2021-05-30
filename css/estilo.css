@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(50deg, #4b778d, #28b5b5, #8fd9a8, #d2e69c);
+    background-size: 300% 300%;
+    height: 100vh;
+    animation: colors 10s ease infinite;
+    overflow-x: hidden;
+}
+
+.circulo-animacao {
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.035);
+    border-top: 1px solid #f1f1f15d;
+    border-radius: 100%;
+    top: 0;
+    animation: animacao-borda 15s ease-in-out infinite;
+    position: absolute;
+}
+
+.circulo-animacao-2 {
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.015);
+    border-right: 1px solid #f1f1f152;
+    border-radius: 100%;
+    top: 2;
+    animation: animacao-borda 15s ease-in-out infinite;
+    position: absolute;
+}
+
+.circulo-animacao-3 {
+    width: 700px;
+    height: 700px;
+    background: rgba(255, 255, 255, 0.020);
+    border-bottom: 3px solid #f1f1f11a;
+    border-radius: 100%;
+    top: -120px;
+    left: -50px;
+    position: absolute;
+    animation: loading 3s ease-in infinite;
+}
+
+#header-padrao .navbar {
+    background: rgba(48, 48, 48, 0.233);
+    position: relative;
+    position: fixed;
+}
+
+.links-header {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+    color: rgba(240, 248, 255, 0.384);
+    position: absolute;
+    right: 10%;
+}
+
+.links-header a {
+    color: white;
+    margin: 20px;
+    transition: all .3s ease-out;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+    transition: all .3s normal;
+    transform: translateY(-5px);
+    background: linear-gradient(45deg, #a79b93, #dab2a8);
+}
+
+.navbar-brand {
+    color: white;
+}
+
+a.navbar-brand {
+    color: white;
+    font: 600;
+    font-size: 25px;
+    transition: all .3 ease-in-out;
+    left: 0;
+}
+
+a.navbar-brand:hover {
+    color: white;
+    transform: translateY(-5%);
+    transition: all .3 ease;
+
+}
+
+.cor-logo {
+    color: #72E6AC;
+}
+
+.cor-logo-banner {
+    color: #72E6AC;
+    animation: cor-alternativa 900ms normal infinite;
+}
+
+input.form-control {
+    border-radius: 15px;
+    border: none;
+    position: absolute;
+    width: 350px;
+    right: 15px;
+    top: 12px;
+}
+
+input.form-control:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+.divisor {
+    border-right: 1px solid rgba(3, 3, 3, 0.062);
+    height: 20px;
+    margin-top: 26px;
+}
+
+.banner {
+    height: 428px
+}
+
+
+.banner h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    padding-top: 180px;
+    padding-left: 50px;
+}
+
+.banner h3 {
+    color: rgba(255, 255, 255, 0.438);
+    margin-left: 450px;
+    transform: translateX(-25%);
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 80px;
+    text-align: center;
+    line-height: 45px;
+    animation: animacao-texto-banner 3s ease-in;
+}
+
+img.scroll-page {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 90px;
+    transform: translateX(-50%);
+    animation: scroll 2s ease-in-out infinite;
+}
+
+#conteudo {
+    background: white;
+    height: 780px;
+    margin-top: 23%;
+    position: relative;
+}
+
+#conteudo h2 {
+    font-size: 50px;
+    margin-top: 80px;
+    color: #72E6AC;
+}
+
+#conteudo p {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: start;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+.borda {
+    border: 1px solid red;
+}
+
+img.img-mulher {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top: 5%;
+    border-radius: 8px;
+    margin-left: 125px;
+}
+
+img.img-horizontal {
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+#cursos {
+    padding-top: 10px;
+    background: linear-gradient(50deg, #8fd9a8, #d2e69c);
+    height: 1950px;
+}
+
+#cursos h2 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+p.paragrafo-variacao{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.288);
+    margin-left: 90px;
+    margin-top: 25px;
+}
+
+p.paragrafo-variacao-2{
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.288);
+}
+.card-cursos {
+    background: rgba(255, 255, 255, 0.103);
+    height: 250px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    margin-right: 30px;
+    animation: animacao-cards 3s ease-in-out infinite;
+    border-bottom: 15px solid rgba(0, 174, 255, 0.030);
+    box-shadow: 20px 30px 30px 1px rgba(0, 0, 0, 0.158);
+}
+
+.card-cursos img {
+    background-size: cover;
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10%;
+}
+
+.card-cursos h3 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 58%;
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 35px;
+    font-weight: 200;
+    margin-top: 15px;
+}
+
+h3.variacao-texto {
+    font-size: 28px;
+    text-align: center;
+}
+
+.texto-card-curso h4 {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.texto-card-curso p {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.288);
+}
+
+#chartdiv {
+    width: 100%;
+    height: 500px;
+}
+
+#percentuais {
+    background: white;
+    position: relative;
+    padding-top: 70px;
+}
+
+#percentuais h2 {
+    color: #8fd9a8;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#percentuais h3{
+    margin-top: 50px;
+    color: #00000094;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+#percentuais p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 80px;
+    color: rgba(0, 0, 0, 0.507);
+    text-align: center;
+    display: flex;
+    margin-left: 50px;
+}
+
+img.img-estudos {
+    width: 400px;
+    height: 400px;
+    right: -50%;
+    transform: translate(-50%);
+    position: relative;
+    margin-top: 22px;
+    animation: animacao-imagem 4s ease-in-out infinite;
+}
+img.img-estudos-variaca {
+    width: 400px;
+    height: 400px;
+    right: -50%;
+    transform: translate(-50%);
+    position: relative;
+    margin-bottom: 45px;
+    margin-top: 45px;
+}
+
+span.paragrafo-alternado{
+    color: #f5b597;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 100px;
+    width: 700px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.icones-inferiores{
+    border-radius: 80px;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.020);
+    border-bottom: 15px solid rgba(0, 174, 255, 0.030);
+}
+.icones-inferiores img{
+    width: 125px;
+    height: 125px;
+    margin-left: 80px;
+    margin-top: 70px;
+
+}
+
+.icones-inferiores h6{
+    color: rgba(255, 255, 255, 0.541);
+    font-weight: 600;
+    font-size: 19px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.icones-inferiores p{
+    color: rgba(255, 255, 255, 0.849);
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-depoimento{
+    background: rgba(255, 255, 255, 0.015);
+    border-radius: 50px;
+    padding: 15px;
+}
+.card-depoimento img{
+    height: 500px;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#ajuda{
+    background: linear-gradient(35deg, #ddac9b, #e9d66a);
+}
+
+#ajuda h2{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 550;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#ajuda h3{
+    color: #ffffff63;
+    width: 900px;
+    text-align: center;
+    position: relative;
+    right: -170px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.conteudo-ajuda p{
+    color: rgba(255, 255, 255, 0.301);
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 60px;
+    text-align: unset;
+}
+
+.metricas{
+    margin-top: 20px;
+}
+
+.metricas h5{
+    color: #8fd9a8;
+    font-size: 120px;
+    font-weight: 700;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-12%);
+    position: relative;
+
+}
+
+.metricas span{
+    color: #ffffff9f;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.metricas-2 h5{
+    color: #8fd9a8;
+    font-size: 120px;
+    font-weight: 600;
+    margin-top: 30px;
+    position: relative;
+}
+
+.metricas-2 span{
+    color: #ffffff9f;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#ajuda h6{
+    color: white;
+    font-size: 100px;
+    font-weight: 600;
+    margin-top: 150px;
+}
+
+@keyframes colors {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes scroll {
+
+    0% {
+        opacity: .0;
+        transform: translateY(-0%);
+    }
+
+    25% {
+        opacity: .3;
+        transform: translateY(-0%);
+
+    }
+
+    50% {
+        opacity: .1;
+        transform: translateY(-50%);
+    }
+
+    75% {
+        opacity: .1;
+        transform: translateY(-0%);
+
+    }
+
+    100% {
+        opacity: .1;
+        transform: translateY(-0%);
+    }
+}
+
+@keyframes cor-alternativa {
+
+    0% {
+        opacity: 0;
+        color: white;
+
+    }
+
+    50% {
+        color: white;
+    }
+
+    75% {
+        color: white;
+
+    }
+
+
+    100% {
+        color: white;
+
+    }
+}
+
+@keyframes animacao-borda {
+    0% {
+        transform: translate(0%, -3%);
+    }
+
+    50% {
+        transform: translate(600%, 120%);
+    }
+
+    100% {
+        transform: translate(0%, -3%);
+    }
+
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animacao-imagem {
+    0% {
+        transform: translate(-50%, -10%);
+    }
+
+    50% {
+        transform: translate(-50%, -2%);
+    }
+
+    100% {
+        transform: translate(-50%, -10%);
+    }
+}
+
+@keyframes animacao-cards {
+    0%{
+        opacity: 0.6;
+        transform: translate(-0%, 4%);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(2%, -5%);
+    }
+    100%{
+        opacity: 0.6;
+        transform: translate(-0%, 4%);
+    }
+}
+
+@keyframes animacao-texto-banner {
+    0% {
+        transform: scale(0%);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
