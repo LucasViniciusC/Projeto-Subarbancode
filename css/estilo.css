@@ -138,11 +138,11 @@ input.form-control:focus {
 
 .banner h3 {
     color: rgba(255, 255, 255, 0.438);
-    margin-left: 450px;
+    margin-left: 530px;
     transform: translateX(-25%);
     font-weight: 500;
     font-size: 35px;
-    margin-top: 80px;
+    margin-top: 100px;
     text-align: center;
     line-height: 45px;
     animation: animacao-texto-banner 3s ease-in;
@@ -152,7 +152,7 @@ img.scroll-page {
     width: 60px;
     height: 40px;
     position: absolute;
-    left: 47%;
+    left: 48%;
     bottom: 90px;
     transform: translateX(-50%);
     animation: scroll 2s ease-in-out infinite;
@@ -196,6 +196,7 @@ img.img-horizontal {
     margin-top: 15px;
     padding: 8px;
     border-radius: 20px;
+    opacity: .9;
     animation:  animicao-suave 3s ease-in-out infinite;
 }
 
@@ -216,7 +217,7 @@ img.img-horizontal {
 }
 
 p.paragrafo-variacao{
-    font-size: 22px;
+    font-size: 23px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.288);
     margin-left: 90px;
@@ -272,7 +273,7 @@ h3.variacao-texto {
 }
 
 .texto-card-curso p {
-    font-size: 22px;
+    font-size: 23px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.288);
 }
@@ -551,6 +552,11 @@ span.paragrafo-alternado{
     opacity: 0.5;
 }
 
+p.button{
+    left: 50%;  
+    position: relative; 
+    transform: translate(-15%);
+}
 
 
 @keyframes colors {
